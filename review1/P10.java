@@ -1,4 +1,4 @@
-class ReviewP10 {
+class Review1P10 {
 	public static void main(String[] args) {
 		int curPopulation = 312_032_486;
 		int secondsInAYear = 60 * 60 * 24 * 365;

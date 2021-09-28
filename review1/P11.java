@@ -1,4 +1,4 @@
-class ReviewP11 {
+class Review1P11 {
 	public static void main(String[] args) {
 		int h = 1;
 		int m = 40;
@@ -11,5 +11,5 @@ class ReviewP11 {
 		double kilometersPerHour = kilometers / runningTimeInHours;
 
 		System.out.println("The average speed of the runner is " + kilometersPerHour + " kilometers/hour");
-	}	
+	}
 }

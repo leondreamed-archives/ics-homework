@@ -1,4 +1,4 @@
-class ReviewP12 {
+class Review1P12 {
 	public static void main(String[] args) {
 		double a = 3.4;
 		double b = 50.2;
@@ -11,5 +11,5 @@ class ReviewP12 {
 		double y = (a*f - e*c) / (a*d - b*c);
 
 		System.out.println("x is " + x + ", y is " + y);
-	}	
+	}
 }

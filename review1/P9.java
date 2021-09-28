@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-class ReviewP9 {
+class Review1P9 {
 	public static void main(String[] args) {
 		System.out.print("Please enter 5 grades: ");
-		
+
 		Scanner sc = new Scanner(System.in);
 
 		int g1 = sc.nextInt();

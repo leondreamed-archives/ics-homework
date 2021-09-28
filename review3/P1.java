@@ -11,5 +11,7 @@ class Review3P1 {
 
 		System.out.println("The value of X^Y using the formula e^(Y*ln(X)) is " + powResult1);
 		System.out.println("The value of X^Y using Math.pow is: " + powResult2);
+
+		sc.close();
 	}
 }

@@ -19,5 +19,7 @@ class Review1P6 {
 		String[] months = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
 
 		System.out.println("Easter will happen on " + months[m] + " " + d + " in the year " + y);
+
+		sc.close();
 	}
 }
