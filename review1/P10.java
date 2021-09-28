@@ -14,7 +14,8 @@ class Review1P10 {
 			int increaseInPopulation = increaseInBirths + increaseInImmigrants - increaseInDeaths;
 			int projectedPopulation = curPopulation + increaseInPopulation;
 
-			System.out.println("The population in " + (i + i == 1 ? "year" : "years") + " will be " + projectedPopulation);
+			System.out.println(
+					"The population in " + i + " " + (i + i == 1 ? "year" : "years") + " will be " + projectedPopulation);
 		}
 	}
 }

@@ -14,6 +14,6 @@ public class WellOrder {
 			}
 		}
 
-		System.out.println("The total number is " + count);
+		System.out.println("\n\nThe total number is " + count);
 	}
 }

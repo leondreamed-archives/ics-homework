@@ -10,6 +10,6 @@ class Review1P11 {
 
 		double kilometersPerHour = kilometers / runningTimeInHours;
 
-		System.out.println("The average speed of the runner is " + kilometersPerHour + " kilometers/hour");
+		System.out.printf("The average speed of the runner is %.2f kilometers/hour", kilometersPerHour);
 	}
 }
