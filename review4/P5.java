@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class ReviewP5 {
+class Review4P5 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt(), m = sc.nextInt();
@@ -18,7 +18,7 @@ class ReviewP5 {
 				}
 			}
 		}
-		
+
 		for (int y = 0; y < n; ++y) {
 			for (int x = 0; x < m; ++x) {
 				if (hasMine[y][x]) continue;
