@@ -1,8 +1,10 @@
 {
 	"java.project.sourcePaths": [
-		"review1",
-		"review2",
-		"review3",
-		"review4"
+		"java-review/review1",
+		"java-review/review2",
+		"java-review/review3",
+		"java-review/review4",
+		"computing-thinking/searching",
+		"computing-thinking/sorting"
 	]
 }
