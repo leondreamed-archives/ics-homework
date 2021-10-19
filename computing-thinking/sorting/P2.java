@@ -10,16 +10,18 @@ class SortingP2 {
 		}
 
 		// Sorting the strings using selection sort
-		for (int i = 1; i < 10; i += 1) {
-			// Finding the first index of the string that is less
-			int index = i - 1;
-			String curString = strings[i];
-
-			while (index >= 0 && curString.compareTo(strings[index]) < 0) {
-				strings[index + 1] = strings[index];
-				index -= 1;
+		for (int i = 0; i < 10; i += 1) {
+			int minIndex = i;
+			// Find the maximum
+			for (int j = i; j < 10; j += 1) {
+				if (strings[j].compareTo(strings[minIndex]) > 0) {
+					minIndex = j;
+				}
 			}
-			strings[index + 1] = curString;
+
+			String temp = strings[i];
+			strings[i] = strings[minIndex];
+			strings[minIndex] = temp;
 		}
 
 		System.out.println("The sorted list:");

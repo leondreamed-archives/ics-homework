@@ -1,14 +1,15 @@
 import java.util.Scanner;
 
 class SearchingP3 {
-	public static int search(int[] nums, int val) {
-		for (int i = arr.length - 1; i >= 0; i -= 1) {
-			if (nums[i] == val) {
-				if (i < arr.length - 1) {
-					int temp = nums[i + 1];
-					nums[i + 1] = nums[i];
-					nums[i] = temp;
+	public static int search(int[] arr, int val) {
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] == val) {
+				if (i > 0) {
+					int temp = arr[i - 1];
+					arr[i - 1] = arr[i];
+					arr[i] = temp;
 				}
+
 				return i;
 			}
 		}
@@ -24,8 +25,8 @@ class SearchingP3 {
 		int[] nums = new int[len];
 
 		for (int i = 0; i < len; ++i) {
-			System.out.print("Enter integer " + (i + 1) + ":");
-			int num = sc.nextInt();
+			System.out.print("Enter integer " + (i + 1) + " :");
+			nums[i] = sc.nextInt();
 		}
 
 		System.out.println("Initial list:");
@@ -41,7 +42,7 @@ class SearchingP3 {
 				return;
 			}
 
-			int index = search(nums, val);
+			int index = search(nums, num);
 			if (index != -1) {
 				System.out.println("Value found at position " + index + ".");
 			} else {
@@ -53,7 +54,5 @@ class SearchingP3 {
 				System.out.print(i + " ");
 			}
 		}
-
-		sc.close();
 	}
 }
