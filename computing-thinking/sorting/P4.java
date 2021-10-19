@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class P4 {
+class SortingP4 {
 	public static void selectionSort(int arr[], int k) {
 		for (int i = arr.length - 1; i > arr.length - 1 - k; i -= 1) {
 			int maxIndex = i;

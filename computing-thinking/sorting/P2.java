@@ -12,9 +12,9 @@ class SortingP2 {
 		// Sorting the strings using selection sort
 		for (int i = 0; i < 10; i += 1) {
 			int minIndex = i;
-			// Find the maximum
+			// Find the minimum
 			for (int j = i; j < 10; j += 1) {
-				if (strings[j].compareTo(strings[minIndex]) > 0) {
+				if (strings[j].compareTo(strings[minIndex]) < 0) {
 					minIndex = j;
 				}
 			}

@@ -26,17 +26,19 @@ class SearchingP5 {
 		int num = sc.nextInt();
 
 		int l = 0, r = 19;
-		while (l <= r) {
+		while (l < r) {
 			int m = (l + r) / 2;
 			if (arr[m] == num) {
 				System.out.print("The position of your number is: " + m);
 			} else if (arr[m] < num) {
-				l = m;
+				l = m + 1;
 			} else if (arr[m] > num) {
-				r = m;
+				r = m - 1;
 			}
 		}
 
-		System.out.println("Your number was not present in the array.");
+		if (l == r && arr[l] != num) {
+			System.out.println("Your number was not present in the array.");
+		}
 	}
 }

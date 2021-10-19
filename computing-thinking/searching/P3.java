@@ -25,7 +25,7 @@ class SearchingP3 {
 		int[] nums = new int[len];
 
 		for (int i = 0; i < len; ++i) {
-			System.out.print("Enter integer " + (i + 1) + " :");
+			System.out.print("Enter integer " + (i + 1) + ": ");
 			nums[i] = sc.nextInt();
 		}
 

@@ -8,9 +8,9 @@ class SearchingP7 {
 			if (arr[m] == num) {
 				System.out.print("The position of your number is: " + m);
 			} else if (arr[m] < num) {
-				l = m;
+				l = m + 1;
 			} else if (arr[m] > num) {
-				r = m;
+				r = m - 1;
 			}
 		}
 
